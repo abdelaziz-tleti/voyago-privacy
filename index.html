@@ -6,11 +6,6 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <title>Voyago – Politique de confidentialité / Privacy policy / سياسة الخصوصية</title>
-<!--
-  DRAFT. Before publishing, read GAPS.md: every "[À CONFIRMER]" / "[TO CONFIRM]" / "[يُرجى التأكيد]" marker
-  must be resolved and removed, and the explicit-consent step for sensitive preferences (GAPS.md #1) must exist
-  in the app, because this policy describes it.
--->
 <style>
 :root{--bg:#fff;--fg:#1a1a1a;--muted:#555;--line:#d0d0d0;--accent:#0b57d0;--head:#f3f6fb;--note:#fff4d6}
 @media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#ececec;--muted:#b5b5b5;--line:#3a3a3a;--accent:#8ab4f8;--head:#1d2430;--note:#3a3220}}
@@ -25,7 +20,7 @@ nav a{display:inline-block;padding:.4rem .8rem;border:1px solid var(--line);bord
 h1{font-size:1.6rem;line-height:1.3}h2{font-size:1.25rem;margin-top:2rem}h3{font-size:1.05rem}
 section.lang{border-top:2px solid var(--line);margin-top:2.5rem;padding-top:1rem}
 .meta{color:var(--muted)}
-.draft{background:var(--note);border:1px solid var(--line);border-radius:8px;padding:.6rem .9rem}
+.ai{background:var(--note);border:1px solid var(--line);border-radius:8px;padding:.6rem .9rem}
 .table-wrap{overflow-x:auto}
 table{border-collapse:collapse;width:100%;margin:.5rem 0 1rem;font-size:.95rem}
 th,td{border:1px solid var(--line);padding:.45rem .55rem;vertical-align:top;text-align:start}
@@ -38,7 +33,6 @@ th{background:var(--head)}
 <main>
 <h1>Voyago – <span lang="fr">Politique de confidentialité</span> / <span lang="en">Privacy policy</span> / <span lang="ar" dir="rtl">سياسة الخصوصية</span></h1>
 <p class="meta">Application Android <code>com.tleti.voyago</code> · Dernière mise à jour / Last updated / آخر تحديث : <time datetime="2026-10-19">2026-10-19</time></p>
-<p class="draft" role="note">Brouillon : les mentions [À CONFIRMER] doivent être validées avant publication. / Draft: items marked [TO CONFIRM] must be checked before publication.</p>
 <nav aria-label="Langue / Language / اللغة">
 <ul>
 <li><a href="#fr" hreflang="fr" lang="fr">Français</a></li>
@@ -54,13 +48,13 @@ th{background:var(--head)}
 <p>Voyago est une application qui prépare un itinéraire de voyage à l'aide d'une intelligence artificielle. Cette page explique quelles données sont traitées, pourquoi, avec qui elles sont partagées, combien de temps elles sont gardées et comment exercer vos droits (RGPD).</p>
 
 <h3>1. Responsable du traitement</h3>
-<p>AbdelAaziz Tleti [À CONFIRMER], développeur indépendant de Voyago. Contact : <a href="mailto:abdelaziz.git@gmail.com">abdelaziz.git@gmail.com</a>.</p>
+<p>AbdelAaziz Tleti, développeur indépendant de Voyago. Contact : <a href="mailto:abdelaziz.git@gmail.com">abdelaziz.git@gmail.com</a>.</p>
 
 <h3>2. En bref</h3>
 <ul>
 <li>Pas de publicité, pas d'outil de mesure d'audience (analytics), pas de suivi publicitaire, aucune vente de données.</li>
 <li>Vous pouvez créer un voyage sans compte. Le compte sert seulement à retrouver vos voyages.</li>
-<li>Le contenu de votre demande de voyage est envoyé à Google Gemini pour générer l'itinéraire. Votre e-mail n'y est jamais envoyé.</li>
+<li>Le contenu de votre demande de voyage est envoyé à Google Gemini pour générer l'itinéraire. Votre e-mail n'y est jamais envoyé. Pendant la phase de test (niveau gratuit de Gemini), Google peut utiliser ce contenu pour ses propres produits : voir <a href="#fr-ia">Intelligence artificielle</a>.</li>
 <li>La liste de bagages, les dépenses et le brouillon de voyage restent sur votre téléphone.</li>
 <li>Vous pouvez supprimer votre compte à tout moment dans l'app (Profil &gt; Supprimer mon compte).</li>
 </ul>
@@ -74,24 +68,24 @@ th{background:var(--head)}
 <tr><td>Connexion Google : identifiant de compte Google et e-mail vérifié par Google (pas votre nom ni votre photo)</td><td>Vous connecter avec Google</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
 <tr><td>Langue et devise du compte</td><td>Afficher l'app et les montants</td><td>Exécution du contrat</td></tr>
 <tr><td>Voyage : destination(s) et étapes, dates, budget, rythme, styles, langue, nationalité (si indiquée), itinéraire et infos pratiques générés</td><td>Générer, enregistrer et afficher votre itinéraire ; la nationalité sert aux formalités (visa…)</td><td>Exécution du contrat</td></tr>
-<tr><td>Préférences facultatives : type de groupe, nombre d'adultes, âge des enfants, transport, hébergement, heure de réveil, « à voir absolument » et « à éviter » (texte libre)</td><td>Personnaliser l'itinéraire</td><td>Exécution du contrat</td></tr>
-<tr><td>Préférences sensibles facultatives : régime alimentaire (dont halal ou casher, qui peuvent révéler une conviction religieuse), mobilité réduite (donnée de santé)</td><td>Adapter les repas et les activités</td><td>Votre consentement explicite (art. 9.2.a), retirable à tout moment</td></tr>
+<tr><td>Préférences facultatives : type de groupe, nombre d'adultes, transport, hébergement, heure de réveil, « à voir absolument » et « à éviter » (texte libre)</td><td>Personnaliser l'itinéraire</td><td>Exécution du contrat</td></tr>
+<tr><td>Préférences sensibles facultatives : régime alimentaire (dont halal ou casher, qui peuvent révéler une conviction religieuse), mobilité réduite (donnée de santé), âge des enfants (mineurs)</td><td>Adapter les repas, les activités et le rythme</td><td>Votre consentement explicite (art. 9.2.a) à l'envoi de ces informations à nos serveurs et au fournisseur d'IA (Google Gemini) pour personnaliser le voyage, donné par une case non pré-cochée avant la création du voyage, dont la date est enregistrée avec le voyage. Sans lui, le voyage n'est pas créé. Retrait : supprimez le voyage</td></tr>
 <tr><td>Lien de partage (jeton secret), si vous partagez un voyage</td><td>Permettre la lecture du voyage par les personnes qui ont le lien</td><td>Exécution du contrat</td></tr>
 <tr><td>Adresse IP et type d'appareil/navigateur (user agent) dans les journaux de sécurité ; adresse IP d'une demande de réinitialisation</td><td>Sécurité : limiter les abus et les tentatives de connexion, tracer les connexions, réinitialisations et suppressions de compte</td><td>Intérêt légitime (art. 6.1.f) : protéger les comptes et le service</td></tr>
 </tbody>
 </table></div>
-<p>Écrire dans les champs de texte libre des informations sensibles (santé, religion…) n'est pas nécessaire : ne le faites que si vous le souhaitez.</p>
+<p>Écrire dans les champs de texte libre des informations sensibles (santé, religion…) n'est pas nécessaire. Ces textes sont envoyés à Google Gemini : évitez d'y écrire des informations que vous jugez sensibles (voir <a href="#fr-ia">Intelligence artificielle</a>).</p>
 
 <h3>4. Données qui restent sur votre téléphone</h3>
-<p>Ces données ne sont pas envoyées à nos serveurs : liste de bagages (objets cochés et ajoutés), dépenses du voyage, brouillon du formulaire « Nouveau voyage » (qui peut contenir vos préférences), nationalité par défaut, langue de l'app, copie des voyages déjà ouverts (lecture hors ligne), liste des voyages créés sans compte, et votre jeton de session. Elles sont effacées en désinstallant l'app ou en effaçant ses données. La déconnexion efface la session et la copie des voyages du compte ; la suppression du compte efface aussi la liste de bagages et les dépenses de ces voyages.</p>
+<p>Ces données ne sont pas envoyées à nos serveurs : liste de bagages (objets cochés et ajoutés), dépenses du voyage, brouillon du formulaire « Nouveau voyage » (qui peut contenir vos préférences), nationalité par défaut, langue de l'app, copie des voyages déjà ouverts (lecture hors ligne), liste des voyages créés sans compte, et votre jeton de session. Elles ne sont pas copiées dans la sauvegarde du téléphone (Android) et sont effacées en désinstallant l'app ou en effaçant ses données. La déconnexion efface la session et la copie des voyages du compte ; la suppression du compte efface aussi la liste de bagages et les dépenses de ces voyages.</p>
 
 <h3>5. Destinataires et sous-traitants</h3>
 <div class="table-wrap"><table>
 <thead><tr><th scope="col">Service</th><th scope="col">Rôle</th><th scope="col">Ce qu'il reçoit</th></tr></thead>
 <tbody>
 <tr><td>Render (Render Services, Inc.), serveurs à Francfort (UE)</td><td>Hébergement de l'API</td><td>Toutes les requêtes de l'app vers nos serveurs, journaux techniques</td></tr>
-<tr><td>Neon (base PostgreSQL), région Europe [À CONFIRMER : région exacte]</td><td>Base de données</td><td>Compte, voyages, préférences, jetons</td></tr>
-<tr><td>Google (API Gemini)</td><td>Génération de l'itinéraire, des alternatives et des infos pratiques</td><td>Le contenu de la demande : destination(s), dates, budget, rythme, styles, nationalité, préférences (dont régime, mobilité, âge des enfants, textes libres). Jamais votre e-mail ni votre identifiant</td></tr>
+<tr><td>Neon (base PostgreSQL), hébergée chez AWS en Europe (Francfort, eu-central-1)</td><td>Base de données</td><td>Compte, voyages, préférences, jetons</td></tr>
+<tr><td>Google (API Gemini)</td><td>Génération de l'itinéraire, des alternatives et des infos pratiques</td><td>Le contenu de la demande : destination(s), dates, budget, rythme, styles, nationalité, préférences (dont régime, mobilité, âge des enfants, textes libres). Jamais votre e-mail ni votre identifiant. <strong>Phase de test, niveau gratuit :</strong> Google peut utiliser ce contenu pour fournir, améliorer et développer ses produits, et des relecteurs humains peuvent le lire (voir ci-dessous)</td></tr>
 <tr><td>Google (Google Sign-In)</td><td>Connexion avec Google, si vous la choisissez</td><td>Google sait que vous vous connectez à Voyago ; nous recevons l'identifiant et l'e-mail du compte Google</td></tr>
 <tr><td>Brevo (Sendinblue SAS, France)</td><td>Envoi des e-mails de service (réinitialisation, mot de passe modifié)</td><td>Votre adresse e-mail et le contenu de l'e-mail. Aucun e-mail publicitaire</td></tr>
 <tr><td>OpenStreetMap Nominatim (depuis nos serveurs)</td><td>Vérifier que les lieux proposés existent</td><td>Nom et adresse des lieux de l'itinéraire, sans aucune donnée vous concernant</td></tr>
@@ -99,23 +93,24 @@ th{background:var(--head)}
 <tr><td>OpenStreetMap, tuiles de carte (depuis votre téléphone)</td><td>Afficher les cartes</td><td>La zone de carte affichée, votre adresse IP, l'identifiant de l'app</td></tr>
 <tr><td>Booking.com, GetYourGuide, DiscoverCars (liens affiliés)</td><td>Réserver un hébergement, une activité ou une voiture, uniquement si vous touchez le lien</td><td>Notre identifiant d'affilié, la destination et les dates ; pour Booking.com, le nombre d'adultes et l'âge des enfants. Le site applique ensuite sa propre politique</td></tr>
 <tr><td>Google Maps (lien)</td><td>Ouvrir un lieu ou un trajet, uniquement si vous touchez le lien</td><td>Les coordonnées des lieux</td></tr>
-<tr><td>Personnes à qui vous envoyez un lien de partage</td><td>Lire votre voyage</td><td>Destination, dates, itinéraire, nationalité indiquée et infos pratiques. Pas le régime, la mobilité, ni l'âge des enfants. Vous pouvez révoquer le lien</td></tr>
+<tr><td>Personnes à qui vous envoyez un lien de partage</td><td>Lire votre voyage</td><td>Destination, dates, itinéraire et infos pratiques. Pas la nationalité, le régime, la mobilité, ni l'âge des enfants. Vous pouvez révoquer le lien</td></tr>
 </tbody>
 </table></div>
 <p>Nous ne vendons ni ne louons vos données. Nous pouvons les communiquer si la loi l'exige.</p>
+<p id="fr-ia" class="ai"><strong>Intelligence artificielle (Google Gemini) pendant la phase de test.</strong> Pendant la phase de test, Voyago utilise le niveau gratuit de l'API Gemini. Sur ce niveau, Google peut utiliser le contenu qui lui est envoyé (votre demande de voyage, y compris les préférences que vous indiquez) pour fournir, améliorer et développer ses produits, et des relecteurs humains peuvent le lire. Pour ces usages, Google agit pour son propre compte et pas seulement pour le nôtre. Le régime alimentaire, la mobilité réduite et l'âge des enfants ne sont envoyés qu'avec votre consentement explicite (section 3). Évitez d'écrire dans les champs de texte libre des informations que vous jugez sensibles. Cela changera lorsque l'app passera à un niveau payant de Gemini ; cette politique sera alors mise à jour.</p>
 
 <h3>6. Transferts hors de l'Union européenne</h3>
-<p>Google, Render et OpenStreetMap peuvent traiter des données hors de l'UE (notamment aux États-Unis ou au Royaume-Uni). Ces transferts reposent sur les garanties proposées par ces prestataires : décision d'adéquation (Data Privacy Framework, Royaume-Uni) ou clauses contractuelles types de la Commission européenne [À CONFIRMER pour chaque prestataire].</p>
+<p>Nos données sont hébergées dans l'UE (Render et Neon à Francfort). Google, Render, Neon et OpenStreetMap peuvent toutefois traiter des données hors de l'UE (notamment aux États-Unis ou au Royaume-Uni). Render, Neon, Brevo et Google agissent selon leurs conditions standard de traitement des données (conditions de sous-traitance ou équivalentes), qui s'appliquent à l'utilisation de leurs services ; aucun contrat négocié spécifiquement n'a été signé avec eux. Les transferts reposent sur les garanties prévues par ces conditions : décision d'adéquation (Data Privacy Framework, Royaume-Uni) ou clauses contractuelles types de la Commission européenne. Pour Gemini au niveau gratuit, Google utilise aussi les contenus pour son propre compte (voir <a href="#fr-ia">Intelligence artificielle</a>).</p>
 
 <h3>7. Durées de conservation</h3>
 <ul>
 <li>Compte et voyages liés au compte : jusqu'à la suppression du compte (immédiate dans l'app, sous 30 jours sur demande par e-mail).</li>
-<li>Voyages créés sans compte : 12 mois après la date de fin du voyage. Vous pouvez les supprimer avant, depuis l'app.</li>
-<li>Liens de réinitialisation : valables 30 minutes, une seule fois ; l'enregistrement de la demande (avec l'adresse IP) est supprimé après 30 jours.</li>
+<li>Voyages créés sans compte : supprimés automatiquement 12 mois après leur création. Vous pouvez les supprimer avant, depuis l'app.</li>
+<li>Liens de réinitialisation : valables 30 minutes, une seule fois ; l'enregistrement de la demande (avec l'adresse IP) est supprimé automatiquement 30 jours après la demande.</li>
 <li>Journaux de sécurité (IP, user agent) : 30 jours au plus.</li>
 <li>Compteurs anti-abus : en mémoire, 24 heures au plus.</li>
 <li>Sauvegardes techniques : effacées au plus tard 30 jours après la suppression des données.</li>
-<li>Données chez les sous-traitants (Google Gemini, Brevo) : selon leurs conditions, pour leur fonctionnement et la lutte contre les abus.</li>
+<li>Données chez les prestataires : Brevo, selon ses conditions, pour son fonctionnement et la lutte contre les abus ; Google Gemini (niveau gratuit, phase de test), selon les conditions de Google, qui peut conserver les contenus pour améliorer ses produits.</li>
 </ul>
 
 <h3>8. Ce que nous ne faisons pas</h3>
@@ -141,13 +136,13 @@ th{background:var(--head)}
 <p>Voyago is an app that plans a trip itinerary with artificial intelligence. This page explains which data is processed, why, who receives it, how long it is kept and how to exercise your rights (GDPR).</p>
 
 <h3>1. Data controller</h3>
-<p>AbdelAaziz Tleti [TO CONFIRM], independent developer of Voyago. Contact: <a href="mailto:abdelaziz.git@gmail.com">abdelaziz.git@gmail.com</a>.</p>
+<p>AbdelAaziz Tleti, independent developer of Voyago. Contact: <a href="mailto:abdelaziz.git@gmail.com">abdelaziz.git@gmail.com</a>.</p>
 
 <h3>2. In short</h3>
 <ul>
 <li>No ads, no analytics, no advertising tracking, no sale of data.</li>
 <li>You can create a trip without an account. The account only lets you find your trips again.</li>
-<li>The content of your trip request is sent to Google Gemini to generate the itinerary. Your e-mail is never sent to it.</li>
+<li>The content of your trip request is sent to Google Gemini to generate the itinerary. Your e-mail is never sent to it. During the test phase (Gemini free tier), Google may use this content for its own products: see <a href="#en-ai">Artificial intelligence</a>.</li>
 <li>The packing list, expenses and trip draft stay on your phone.</li>
 <li>You can delete your account at any time in the app (Profile &gt; Delete my account).</li>
 </ul>
@@ -161,24 +156,24 @@ th{background:var(--head)}
 <tr><td>Google sign-in: Google account ID and the e-mail verified by Google (not your name or photo)</td><td>Sign you in with Google</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
 <tr><td>Account language and currency</td><td>Display the app and amounts</td><td>Performance of a contract</td></tr>
 <tr><td>Trip: destination(s) and stops, dates, budget, pace, styles, language, nationality (if given), generated itinerary and practical info</td><td>Generate, save and display your itinerary; nationality is used for entry requirements (visa…)</td><td>Performance of a contract</td></tr>
-<tr><td>Optional preferences: type of group, number of adults, children's ages, transport, lodging, wake-up time, “must see” and “avoid” (free text)</td><td>Personalise the itinerary</td><td>Performance of a contract</td></tr>
-<tr><td>Optional sensitive preferences: diet (including halal or kosher, which may reveal a religious belief), reduced mobility (health data)</td><td>Adapt meals and activities</td><td>Your explicit consent (Art. 9(2)(a)), which you can withdraw at any time</td></tr>
+<tr><td>Optional preferences: type of group, number of adults, transport, lodging, wake-up time, “must see” and “avoid” (free text)</td><td>Personalise the itinerary</td><td>Performance of a contract</td></tr>
+<tr><td>Optional sensitive preferences: diet (including halal or kosher, which may reveal a religious belief), reduced mobility (health data), children's ages (minors)</td><td>Adapt meals, activities and pace</td><td>Your explicit consent (Art. 9(2)(a)) to sending these details to our servers and to the AI provider (Google Gemini) to personalise the trip, given with an unticked checkbox before the trip is created, and whose date is recorded with the trip. Without it, the trip is not created. Withdrawal: delete the trip</td></tr>
 <tr><td>Share link (secret token), if you share a trip</td><td>Let people who have the link read the trip</td><td>Performance of a contract</td></tr>
 <tr><td>IP address and device/browser type (user agent) in security logs; IP address of a password reset request</td><td>Security: limit abuse and sign-in attempts, record sign-ins, password resets and account deletions</td><td>Legitimate interest (Art. 6(1)(f)): protecting accounts and the service</td></tr>
 </tbody>
 </table></div>
-<p>You do not need to write sensitive information (health, religion…) in the free-text fields: only do so if you wish.</p>
+<p>You do not need to write sensitive information (health, religion…) in the free-text fields. These texts are sent to Google Gemini: avoid entering information you consider sensitive (see <a href="#en-ai">Artificial intelligence</a>).</p>
 
 <h3>4. Data that stays on your phone</h3>
-<p>This data is not sent to our servers: packing list (checked and added items), trip expenses, the “New trip” form draft (which may contain your preferences), default nationality, app language, a copy of the trips already opened (offline reading), the list of trips created without an account, and your session token. It is erased when you uninstall the app or clear its data. Signing out erases the session and the copy of the account's trips; deleting the account also erases the packing lists and expenses of those trips.</p>
+<p>This data is not sent to our servers: packing list (checked and added items), trip expenses, the “New trip” form draft (which may contain your preferences), default nationality, app language, a copy of the trips already opened (offline reading), the list of trips created without an account, and your session token. It is not copied to the phone's backup (Android) and is erased when you uninstall the app or clear its data. Signing out erases the session and the copy of the account's trips; deleting the account also erases the packing lists and expenses of those trips.</p>
 
 <h3>5. Recipients and processors</h3>
 <div class="table-wrap"><table>
 <thead><tr><th scope="col">Service</th><th scope="col">Role</th><th scope="col">What it receives</th></tr></thead>
 <tbody>
 <tr><td>Render (Render Services, Inc.), servers in Frankfurt (EU)</td><td>API hosting</td><td>Every request from the app to our servers, technical logs</td></tr>
-<tr><td>Neon (PostgreSQL database), Europe region [TO CONFIRM: exact region]</td><td>Database</td><td>Account, trips, preferences, tokens</td></tr>
-<tr><td>Google (Gemini API)</td><td>Generating the itinerary, alternatives and practical info</td><td>The request content: destination(s), dates, budget, pace, styles, nationality, preferences (including diet, mobility, children's ages, free text). Never your e-mail or account ID</td></tr>
+<tr><td>Neon (PostgreSQL database), hosted on AWS in Europe (Frankfurt, eu-central-1)</td><td>Database</td><td>Account, trips, preferences, tokens</td></tr>
+<tr><td>Google (Gemini API)</td><td>Generating the itinerary, alternatives and practical info</td><td>The request content: destination(s), dates, budget, pace, styles, nationality, preferences (including diet, mobility, children's ages, free text). Never your e-mail or account ID. <strong>Test phase, free tier:</strong> Google may use this content to provide, improve and develop its products, and human reviewers may read it (see below)</td></tr>
 <tr><td>Google (Google Sign-In)</td><td>Sign-in with Google, if you choose it</td><td>Google knows you sign in to Voyago; we receive the Google account ID and e-mail</td></tr>
 <tr><td>Brevo (Sendinblue SAS, France)</td><td>Sending service e-mails (password reset, password changed)</td><td>Your e-mail address and the e-mail content. No marketing e-mails</td></tr>
 <tr><td>OpenStreetMap Nominatim (from our servers)</td><td>Checking that suggested places exist</td><td>Name and address of the itinerary's places, with no data about you</td></tr>
@@ -186,23 +181,24 @@ th{background:var(--head)}
 <tr><td>OpenStreetMap map tiles (from your phone)</td><td>Displaying maps</td><td>The map area shown, your IP address, the app identifier</td></tr>
 <tr><td>Booking.com, GetYourGuide, DiscoverCars (affiliate links)</td><td>Booking lodging, an activity or a car, only if you tap the link</td><td>Our affiliate ID, the destination and dates; for Booking.com, the number of adults and children's ages. The site then applies its own policy</td></tr>
 <tr><td>Google Maps (link)</td><td>Opening a place or a route, only if you tap the link</td><td>The places' coordinates</td></tr>
-<tr><td>People you send a share link to</td><td>Reading your trip</td><td>Destination, dates, itinerary, the nationality given and practical info. Not your diet, mobility or children's ages. You can revoke the link</td></tr>
+<tr><td>People you send a share link to</td><td>Reading your trip</td><td>Destination, dates, itinerary and practical info. Not your nationality, diet, mobility or children's ages. You can revoke the link</td></tr>
 </tbody>
 </table></div>
 <p>We do not sell or rent your data. We may disclose it when the law requires it.</p>
+<p id="en-ai" class="ai"><strong>Artificial intelligence (Google Gemini) during the test phase.</strong> During the test phase, Voyago uses the free tier of the Gemini API. On this tier, Google may use the content sent to it (your trip request, including any preferences you provide) to provide, improve and develop its products, and human reviewers may read it. For these uses, Google acts on its own behalf and not only on ours. Diet, reduced mobility and children's ages are only sent with your explicit consent (section 3). Avoid entering information you consider sensitive in the free-text fields. This will change when the app moves to a paid tier of Gemini; this policy will then be updated.</p>
 
 <h3>6. Transfers outside the European Union</h3>
-<p>Google, Render and OpenStreetMap may process data outside the EU (notably in the United States or the United Kingdom). These transfers rely on the safeguards offered by these providers: an adequacy decision (Data Privacy Framework, United Kingdom) or the European Commission's standard contractual clauses [TO CONFIRM for each provider].</p>
+<p>Our data is hosted in the EU (Render and Neon in Frankfurt). Google, Render, Neon and OpenStreetMap may nevertheless process data outside the EU (notably in the United States or the United Kingdom). Render, Neon, Brevo and Google act under their standard data processing terms (data processing addendum or equivalent), which apply to the use of their services; no specifically negotiated contract has been signed with them. Transfers rely on the safeguards set out in these terms: an adequacy decision (Data Privacy Framework, United Kingdom) or the European Commission's standard contractual clauses. For Gemini on the free tier, Google also uses the content on its own behalf (see <a href="#en-ai">Artificial intelligence</a>).</p>
 
 <h3>7. Retention</h3>
 <ul>
 <li>Account and the account's trips: until the account is deleted (immediately in the app, within 30 days on request by e-mail).</li>
-<li>Trips created without an account: 12 months after the trip's end date. You can delete them earlier from the app.</li>
-<li>Password reset links: valid 30 minutes, once; the record of the request (with the IP address) is deleted after 30 days.</li>
+<li>Trips created without an account: deleted automatically 12 months after they were created. You can delete them earlier from the app.</li>
+<li>Password reset links: valid 30 minutes, once; the record of the request (with the IP address) is deleted automatically 30 days after the request.</li>
 <li>Security logs (IP, user agent): 30 days at most.</li>
 <li>Anti-abuse counters: in memory, 24 hours at most.</li>
 <li>Technical backups: erased at the latest 30 days after the data is deleted.</li>
-<li>Data held by processors (Google Gemini, Brevo): according to their terms, for their operation and abuse prevention.</li>
+<li>Data held by providers: Brevo, according to its terms, for its operation and abuse prevention; Google Gemini (free tier, test phase), according to Google's terms, which allow it to keep the content to improve its products.</li>
 </ul>
 
 <h3>8. What we do not do</h3>
@@ -228,13 +224,13 @@ th{background:var(--head)}
 <p>‏Voyago تطبيق يُعدّ لك برنامج رحلة بالاستعانة بالذكاء الاصطناعي. توضّح هذه الصفحة البيانات التي نعالجها، ولماذا، ومن يتلقّاها، ومدة الاحتفاظ بها، وكيف تمارس حقوقك وفق اللائحة العامة لحماية البيانات (GDPR).</p>
 
 <h3>1. المسؤول عن المعالجة</h3>
-<p>‏AbdelAaziz Tleti ‏[يُرجى التأكيد]، المطوّر المستقل لتطبيق Voyago. للتواصل: <a href="mailto:abdelaziz.git@gmail.com" dir="ltr">abdelaziz.git@gmail.com</a>.</p>
+<p>‏AbdelAaziz Tleti، المطوّر المستقل لتطبيق Voyago. للتواصل: <a href="mailto:abdelaziz.git@gmail.com" dir="ltr">abdelaziz.git@gmail.com</a>.</p>
 
 <h3>2. باختصار</h3>
 <ul>
 <li>لا إعلانات، ولا أدوات لقياس الجمهور (التحليلات)، ولا تتبّع إعلاني، ولا بيع للبيانات.</li>
 <li>يمكنك إنشاء رحلة دون حساب. الحساب يتيح لك فقط استرجاع رحلاتك.</li>
-<li>يُرسَل محتوى طلب رحلتك إلى ‏Google Gemini لإعداد البرنامج. لا يُرسَل بريدك الإلكتروني إليه أبدًا.</li>
+<li>يُرسَل محتوى طلب رحلتك إلى ‏Google Gemini لإعداد البرنامج. لا يُرسَل بريدك الإلكتروني إليه أبدًا. وخلال المرحلة التجريبية (المستوى المجاني من Gemini)، قد تستخدم Google هذا المحتوى لمنتجاتها الخاصة: راجع فقرة <a href="#ar-ai">الذكاء الاصطناعي</a>.</li>
 <li>قائمة الأمتعة والمصاريف ومسودّة الرحلة تبقى على هاتفك.</li>
 <li>يمكنك حذف حسابك في أي وقت من داخل التطبيق («حسابي» &gt; «حذف حسابي»).</li>
 </ul>
@@ -248,24 +244,24 @@ th{background:var(--head)}
 <tr><td>تسجيل الدخول عبر Google: معرّف حساب Google والبريد الذي تحقّقت منه Google (لا اسمك ولا صورتك)</td><td>تسجيل دخولك عبر Google</td><td>تنفيذ العقد (المادة 6.1.ب)</td></tr>
 <tr><td>لغة الحساب وعملته</td><td>عرض التطبيق والمبالغ</td><td>تنفيذ العقد</td></tr>
 <tr><td>الرحلة: الوجهة أو الوجهات والمحطات، والتواريخ، والميزانية، والإيقاع، والأنماط، واللغة، والجنسية (إن ذُكرت)، والبرنامج والمعلومات العملية المُولَّدة</td><td>إعداد برنامجك وحفظه وعرضه؛ تُستخدم الجنسية لشروط الدخول (التأشيرة…)</td><td>تنفيذ العقد</td></tr>
-<tr><td>تفضيلات اختيارية: نوع المجموعة، وعدد البالغين، وأعمار الأطفال، ووسيلة التنقل، ونوع الإقامة، ووقت الاستيقاظ، و«لا بدّ من زيارته» و«ما يُتجنّب» (نص حر)</td><td>تخصيص البرنامج</td><td>تنفيذ العقد</td></tr>
-<tr><td>تفضيلات حسّاسة اختيارية: النظام الغذائي (ومنه الحلال أو الكوشر، وقد يكشف ذلك عن معتقد ديني)، وصعوبة الحركة (بيانات صحية)</td><td>تكييف الوجبات والأنشطة</td><td>موافقتك الصريحة (المادة 9.2.أ)، ويمكنك سحبها في أي وقت</td></tr>
+<tr><td>تفضيلات اختيارية: نوع المجموعة، وعدد البالغين، ووسيلة التنقل، ونوع الإقامة، ووقت الاستيقاظ، و«لا بدّ من زيارته» و«ما يُتجنّب» (نص حر)</td><td>تخصيص البرنامج</td><td>تنفيذ العقد</td></tr>
+<tr><td>تفضيلات حسّاسة اختيارية: النظام الغذائي (ومنه الحلال أو الكوشر، وقد يكشف ذلك عن معتقد ديني)، وصعوبة الحركة (بيانات صحية)، وأعمار الأطفال (قاصرون)</td><td>تكييف الوجبات والأنشطة والإيقاع</td><td>موافقتك الصريحة (المادة 9.2.أ) على إرسال هذه المعلومات إلى خوادمنا وإلى مزوّد الذكاء الاصطناعي (Google Gemini) لتخصيص الرحلة، تُعطى بخانة غير مُؤشَّر عليها مسبقًا قبل إنشاء الرحلة، ويُسجَّل تاريخها مع الرحلة. ودونها لا تُنشأ الرحلة. سحبها: احذف الرحلة</td></tr>
 <tr><td>رابط المشاركة (رمز سرّي)، إذا شاركت رحلة</td><td>تمكين من يملك الرابط من الاطّلاع على الرحلة</td><td>تنفيذ العقد</td></tr>
 <tr><td>عنوان IP ونوع الجهاز أو المتصفح (user agent) في سجلات الأمان؛ وعنوان IP لطلب إعادة تعيين كلمة المرور</td><td>الأمان: الحدّ من إساءة الاستخدام ومحاولات الدخول، وتسجيل عمليات الدخول وإعادة التعيين وحذف الحسابات</td><td>المصلحة المشروعة (المادة 6.1.و): حماية الحسابات والخدمة</td></tr>
 </tbody>
 </table></div>
-<p>لا حاجة إلى كتابة معلومات حسّاسة (صحية أو دينية…) في خانات النص الحر: افعل ذلك فقط إن رغبت.</p>
+<p>لا حاجة إلى كتابة معلومات حسّاسة (صحية أو دينية…) في خانات النص الحر. تُرسَل هذه النصوص إلى ‏Google Gemini: تجنّب إدخال أي معلومات تعدّها حسّاسة (راجع فقرة <a href="#ar-ai">الذكاء الاصطناعي</a>).</p>
 
 <h3>4. بيانات تبقى على هاتفك</h3>
-<p>لا تُرسَل هذه البيانات إلى خوادمنا: قائمة الأمتعة (العناصر المُؤشَّر عليها والمُضافة)، ومصاريف الرحلة، ومسودّة نموذج «رحلة جديدة» (وقد تتضمّن تفضيلاتك)، والجنسية الافتراضية، ولغة التطبيق، ونسخة من الرحلات التي فتحتها (للقراءة دون اتصال)، وقائمة الرحلات المُنشأة دون حساب، ورمز الجلسة. تُمحى عند إلغاء تثبيت التطبيق أو مسح بياناته. تسجيل الخروج يمحو الجلسة ونسخة رحلات الحساب؛ وحذف الحساب يمحو كذلك قوائم الأمتعة والمصاريف الخاصة بتلك الرحلات.</p>
+<p>لا تُرسَل هذه البيانات إلى خوادمنا: قائمة الأمتعة (العناصر المُؤشَّر عليها والمُضافة)، ومصاريف الرحلة، ومسودّة نموذج «رحلة جديدة» (وقد تتضمّن تفضيلاتك)، والجنسية الافتراضية، ولغة التطبيق، ونسخة من الرحلات التي فتحتها (للقراءة دون اتصال)، وقائمة الرحلات المُنشأة دون حساب، ورمز الجلسة. لا تُنسخ في النسخة الاحتياطية للهاتف (Android)، وتُمحى عند إلغاء تثبيت التطبيق أو مسح بياناته. تسجيل الخروج يمحو الجلسة ونسخة رحلات الحساب؛ وحذف الحساب يمحو كذلك قوائم الأمتعة والمصاريف الخاصة بتلك الرحلات.</p>
 
 <h3>5. الجهات المتلقّية والمعالِجون</h3>
 <div class="table-wrap"><table>
 <thead><tr><th scope="col">الخدمة</th><th scope="col">الدور</th><th scope="col">ما تتلقّاه</th></tr></thead>
 <tbody>
 <tr><td>‏Render ‏(Render Services, Inc.)، خوادم في فرانكفورت (الاتحاد الأوروبي)</td><td>استضافة الواجهة البرمجية</td><td>كل طلبات التطبيق إلى خوادمنا، والسجلات التقنية</td></tr>
-<tr><td>‏Neon (قاعدة بيانات PostgreSQL)، منطقة أوروبا [يُرجى التأكيد: المنطقة بالتحديد]</td><td>قاعدة البيانات</td><td>الحساب، والرحلات، والتفضيلات، والرموز</td></tr>
-<tr><td>‏Google ‏(واجهة Gemini)</td><td>إعداد البرنامج والبدائل والمعلومات العملية</td><td>محتوى الطلب: الوجهات، والتواريخ، والميزانية، والإيقاع، والأنماط، والجنسية، والتفضيلات (ومنها النظام الغذائي وصعوبة الحركة وأعمار الأطفال والنصوص الحرة). لا يُرسَل بريدك ولا معرّف حسابك أبدًا</td></tr>
+<tr><td>‏Neon (قاعدة بيانات PostgreSQL)، مستضافة لدى AWS في أوروبا (فرانكفورت، ‏eu-central-1)</td><td>قاعدة البيانات</td><td>الحساب، والرحلات، والتفضيلات، والرموز</td></tr>
+<tr><td>‏Google ‏(واجهة Gemini)</td><td>إعداد البرنامج والبدائل والمعلومات العملية</td><td>محتوى الطلب: الوجهات، والتواريخ، والميزانية، والإيقاع، والأنماط، والجنسية، والتفضيلات (ومنها النظام الغذائي وصعوبة الحركة وأعمار الأطفال والنصوص الحرة). لا يُرسَل بريدك ولا معرّف حسابك أبدًا. <strong>المرحلة التجريبية، المستوى المجاني:</strong> قد تستخدم Google هذا المحتوى لتقديم منتجاتها وتحسينها وتطويرها، وقد يطّلع عليه مراجعون بشريون (انظر أدناه)</td></tr>
 <tr><td>‏Google ‏(تسجيل الدخول عبر Google)</td><td>تسجيل الدخول عبر Google إن اخترته</td><td>تعلم Google أنك تسجّل الدخول إلى Voyago؛ ونتلقّى معرّف حساب Google وبريده</td></tr>
 <tr><td>‏Brevo ‏(Sendinblue SAS، فرنسا)</td><td>إرسال رسائل الخدمة (إعادة تعيين كلمة المرور، تغيير كلمة المرور)</td><td>بريدك الإلكتروني ومحتوى الرسالة. لا رسائل تسويقية</td></tr>
 <tr><td>‏OpenStreetMap Nominatim (من خوادمنا)</td><td>التحقّق من وجود الأماكن المقترحة</td><td>اسم أماكن البرنامج وعناوينها، دون أي بيانات عنك</td></tr>
@@ -273,23 +269,24 @@ th{background:var(--head)}
 <tr><td>خرائط OpenStreetMap (من هاتفك)</td><td>عرض الخرائط</td><td>منطقة الخريطة المعروضة، وعنوان IP، ومعرّف التطبيق</td></tr>
 <tr><td>‏Booking.com وGetYourGuide وDiscoverCars (روابط تسويق بالعمولة)</td><td>حجز إقامة أو نشاط أو سيارة، فقط إذا ضغطت على الرابط</td><td>معرّف الشراكة الخاص بنا، والوجهة والتواريخ؛ ولـ Booking.com عدد البالغين وأعمار الأطفال. ثم يطبّق الموقع سياسته الخاصة</td></tr>
 <tr><td>‏Google Maps (رابط)</td><td>فتح مكان أو مسار، فقط إذا ضغطت على الرابط</td><td>إحداثيات الأماكن</td></tr>
-<tr><td>الأشخاص الذين ترسل إليهم رابط مشاركة</td><td>الاطّلاع على رحلتك</td><td>الوجهة، والتواريخ، والبرنامج، والجنسية المذكورة، والمعلومات العملية. لا النظام الغذائي ولا صعوبة الحركة ولا أعمار الأطفال. ويمكنك إلغاء الرابط</td></tr>
+<tr><td>الأشخاص الذين ترسل إليهم رابط مشاركة</td><td>الاطّلاع على رحلتك</td><td>الوجهة، والتواريخ، والبرنامج، والمعلومات العملية. لا الجنسية ولا النظام الغذائي ولا صعوبة الحركة ولا أعمار الأطفال. ويمكنك إلغاء الرابط</td></tr>
 </tbody>
 </table></div>
 <p>لا نبيع بياناتك ولا نؤجّرها. وقد نُفصح عنها إذا اقتضى القانون ذلك.</p>
+<p id="ar-ai" class="ai"><strong>الذكاء الاصطناعي (Google Gemini) خلال المرحلة التجريبية.</strong> يستخدم Voyago خلال المرحلة التجريبية المستوى المجاني من واجهة Gemini البرمجية. وفي هذا المستوى، قد تستخدم Google المحتوى المُرسَل إليها (طلب رحلتك، بما في ذلك أي تفضيلات تُدخلها) لتقديم منتجاتها وتحسينها وتطويرها، وقد يطّلع عليه مراجعون بشريون. وفي هذه الاستخدامات تعمل Google لحسابها الخاص، لا لحسابنا فقط. ولا يُرسَل النظام الغذائي وصعوبة الحركة وأعمار الأطفال إلا بموافقتك الصريحة (القسم 3). تجنّب إدخال أي معلومات تعدّها حسّاسة في خانات النص الحر. سيتغيّر ذلك عند انتقال التطبيق إلى مستوى مدفوع من Gemini، وستُحدَّث هذه السياسة حينئذ.</p>
 
 <h3>6. نقل البيانات خارج الاتحاد الأوروبي</h3>
-<p>قد تعالج Google وRender وOpenStreetMap بيانات خارج الاتحاد الأوروبي (ولا سيما في الولايات المتحدة أو المملكة المتحدة). ويستند هذا النقل إلى الضمانات التي يقدّمها هؤلاء المزوّدون: قرار كفاية (إطار خصوصية البيانات، المملكة المتحدة) أو البنود التعاقدية النموذجية للمفوضية الأوروبية [يُرجى التأكيد لكل مزوّد].</p>
+<p>تُستضاف بياناتنا داخل الاتحاد الأوروبي (‏Render و‏Neon في فرانكفورت). ومع ذلك قد تعالج Google وRender وNeon وOpenStreetMap بيانات خارج الاتحاد الأوروبي (ولا سيما في الولايات المتحدة أو المملكة المتحدة). وتعمل Render وNeon وBrevo وGoogle وفق شروطها القياسية لمعالجة البيانات (ملحق معالجة البيانات أو ما يعادله)، وهي شروط تسري على استخدام خدماتها؛ ولم يُوقَّع معها أي عقد خاص جرى التفاوض عليه. ويستند نقل البيانات إلى الضمانات المنصوص عليها في هذه الشروط: قرار كفاية (إطار خصوصية البيانات، المملكة المتحدة) أو البنود التعاقدية النموذجية للمفوضية الأوروبية. أما Gemini في المستوى المجاني، فتستخدم Google المحتوى أيضًا لحسابها الخاص (راجع فقرة <a href="#ar-ai">الذكاء الاصطناعي</a>).</p>
 
 <h3>7. مدة الاحتفاظ</h3>
 <ul>
 <li>الحساب ورحلاته: إلى حين حذف الحساب (فورًا من التطبيق، وخلال 30 يومًا عند الطلب بالبريد).</li>
-<li>الرحلات المُنشأة دون حساب: 12 شهرًا بعد تاريخ انتهاء الرحلة. ويمكنك حذفها قبل ذلك من التطبيق.</li>
-<li>روابط إعادة تعيين كلمة المرور: صالحة 30 دقيقة ولمرة واحدة؛ ويُحذف سجلّ الطلب (مع عنوان IP) بعد 30 يومًا.</li>
+<li>الرحلات المُنشأة دون حساب: تُحذف تلقائيًا بعد 12 شهرًا من إنشائها. ويمكنك حذفها قبل ذلك من التطبيق.</li>
+<li>روابط إعادة تعيين كلمة المرور: صالحة 30 دقيقة ولمرة واحدة؛ ويُحذف سجلّ الطلب (مع عنوان IP) تلقائيًا بعد 30 يومًا من الطلب.</li>
 <li>سجلات الأمان (IP، ‏user agent): 30 يومًا على الأكثر.</li>
 <li>عدّادات مكافحة الإساءة: في الذاكرة، 24 ساعة على الأكثر.</li>
 <li>النسخ الاحتياطية التقنية: تُمحى خلال 30 يومًا على الأكثر بعد حذف البيانات.</li>
-<li>البيانات لدى المعالِجين (Google Gemini، ‏Brevo): وفق شروطهم، لتشغيل خدماتهم ومكافحة الإساءة.</li>
+<li>البيانات لدى المزوّدين: ‏Brevo وفق شروطها، لتشغيل خدمتها ومكافحة الإساءة؛ و‏Google Gemini (المستوى المجاني، المرحلة التجريبية) وفق شروط Google التي تتيح لها الاحتفاظ بالمحتوى لتحسين منتجاتها.</li>
 </ul>
 
 <h3>8. ما لا نفعله</h3>
